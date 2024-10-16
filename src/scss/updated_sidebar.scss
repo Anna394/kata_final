@@ -1,0 +1,138 @@
+@import 'variables';
+
+body,
+html {
+    height: 100%;
+}
+
+.exit {
+    background-image: url('../img/exit.svg');
+}
+
+.search {
+    background-image: url('../img/search.svg');
+}
+
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    width: 320px;
+    background-color: $white-full;
+    box-shadow: 10px 0 20px -5px $navy-transparent,
+        /* Тень с начальным цветом */
+        20px 0 40px -10px $soft-blue-transparent;
+    /* Тень с конечным цветом */
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    z-index: 200;
+}
+
+.sidebar.active {
+    display: flex;
+}
+
+.upper-menu-sidebar {
+    display: flex;
+    justify-content: space-between;
+    height: 88px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: $dark-gray;
+    text-decoration: none;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+nav a:first-child {
+    margin-left: -20px;
+    padding-left: 20px;
+    background-image: url('../img/highlight.svg');
+    /* Ссылка на иконку */
+    background-repeat: no-repeat;
+    color: $mid-gray;
+    /* Серый цвет текста */
+}
+
+
+nav a:last-child {
+    margin-bottom: 0;
+    /* Убираем отступ снизу у последнего элемента */
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact,
+.languages {
+    margin-top: auto;
+    /* Автоматические отступы сверху для прикрепления к нижней части */
+}
+
+.contact a,
+.languages a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.contact a:hover,
+.languages a:hover {
+    opacity: 0.6;
+}
+
+.languages a {
+    color: black;
+    /* Для languages */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.languages a:last-child {
+    margin-right: 0;
+}
+
+.phone {
+    font-family: 'TT Lakes Medium';
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+}
+
+// @media (min-width: 1120px) {
+
+//     body{
+//         margin-left: 320px;
+//     }
+// }

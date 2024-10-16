@@ -1,0 +1,281 @@
+@import 'variables';
+
+@media (max-width: 768px) {
+
+  :root {
+    --padding-modal: 15px;
+  }
+
+  .modal-content .circle .exit {
+    position: static;
+  }
+
+  #toggleButton {
+    display: none;
+  }
+
+  .side-menu {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0;
+  }
+
+  .modal {
+    max-width: 320px;
+  }
+
+  .side-menu li {
+    flex-shrink: 0;
+  }
+
+  nav {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .brands-grid,
+  .repair-cards,
+  .price-table,
+  .note,
+  .commercial-offer,
+  .footer-content {
+    margin: 15px;
+  }
+
+  .footer-content div:last-child,
+  .footer-content div:first-child {
+    text-align: center;
+  }
+
+  .repair-cards {
+    overflow: visible !important;
+    padding: 0;
+  }
+
+  .repair-card {
+    height: 160px;
+  }
+
+  .price-table {
+    flex-direction: row;
+  }
+
+  .price-row {
+    max-width: 260px !important;
+    height: 200px;
+    flex-direction: column;
+    align-items: start;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 15px;
+    background: $white;
+  }
+
+  .price-cell:nth-child(2n) {
+    padding-bottom: 10px;
+  }
+
+  .order-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .price-row.header {
+    display: none;
+  }
+
+  h3 {
+    color: $light-gray;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+  }
+
+  .price-cell.svaiper {
+    display: block;
+  }
+
+
+  .brands-grid {
+    overflow: visible !important;
+  }
+
+  h1 {
+    padding: 20px 15px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  #toggleButton {
+    display: block;
+  }
+
+  .note,
+  .commercial-offer {
+    margin-left: 25px;
+  }
+
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid $light-border-gray;
+    flex: 1 1 20%;
+    width: auto;
+  }
+
+  .price-row:not(:nth-child(1)) .price-cell:nth-child(2) {
+    flex: 1 1 40%;
+  }
+
+  .header .price-cell:nth-child(1) {
+    flex: 1 1 40%;
+  }
+
+  .brands-grid,
+  .repair-cards {
+    width: 760px;
+    max-height: 170px;
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    gap: 20px;
+    overflow: hidden;
+  }
+
+
+  .brands-grid,
+  .repair-cards,
+  .price-table,
+  .footer-content {
+    margin: 25px auto;
+    margin-bottom: 0;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  button {
+    display: flex;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  p {
+    max-height: 160px;
+  }
+
+  .main__part {
+    padding: 25px;
+    gap: 30px;
+  }
+
+  .main__title {
+    margin-left: -25px;
+  }
+
+  .image {
+    margin: 0;
+    width: 50%;
+    object-fit: contain;
+  }
+
+  .group {
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media (min-width: 1120px) {
+
+  .note,
+  .commercial-offer {
+    margin-left: 30px;
+  }
+
+  body {
+    margin: auto;
+    padding: auto;
+  }
+
+  .brands-grid,
+  .repair-cards {
+    width: 1050px;
+    max-height: 170px;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    row-gap: 15px;
+    column-gap: 30px;
+    overflow: hidden;
+  }
+
+
+  .upper-menu {
+    display: none;
+  }
+
+  .main__repair-and-checkstatus {
+    display: block;
+  }
+
+  .side-menu {
+    flex-wrap: wrap;
+    row-gap: 1ch;
+  }
+
+  .main__title {
+    margin-left: -30px;
+    padding-left: 30px;
+  }
+
+  .main__part {
+    padding: 30px;
+  }
+
+  .description__text {
+    max-height: 170px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  body {
+    margin: 0;
+  }
+
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .main__content {
+    max-width: 1120px;
+    margin-left: 320px;
+  }
+
+  .sidebar {
+    display: flex;
+    left: auto;
+  }
+
+  .page__background {
+    background-color: $off-white;
+  }
+}

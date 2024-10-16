@@ -1,0 +1,30 @@
+@import 'variables';
+
+.footer {
+  background-color: $lightest-gray;
+  border-top: 1px solid $light-border-gray;
+  text-align: center;
+  font-size: 0.875rem;
+  color: $light-gray;
+  line-height: 16px;
+  font-family: 'TT Lakes Regular';
+  font-weight: normal;
+}
+
+.footer-content {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-content div:first-child{
+  text-align:start;
+}
+
+.footer-content div:last-child{
+  max-width: 330px;
+  text-align:end;
+}
+

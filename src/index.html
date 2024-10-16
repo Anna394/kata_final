@@ -1,16 +1,517 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
-  </body>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <title>CPS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="page__background">
+    <div class="app">
+      <header>
+        <div class="upper-menu">
+          <div class="left-side">
+            <div class="circle burger"></div>
+            <img class="hidden" src="./img/divider.svg">
+            <img src="./img/Group.svg">
+          </div>
+
+          <div class="right-side">
+            <div class="circle call hidden"></div>
+            <div class="circle chat hidden"></div>
+            <div class="circle profile hidden"></div>
+            <img src="./img/divider.svg">
+            <div class="circle repair"></div>
+            <div class="circle checkstatus"></div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main__content">
+          <div class="main__part">
+            <div class="main__title">
+              <h1>Услуги и сервисы</h1>
+            </div>
+
+            <div class="main__repair-and-checkstatus">
+              <div class="right-side">
+                <button>Оставить заявку<img src="./img/repair.svg"></button>
+                <button>Статус ремонта<img src="./img/checkstatus.svg"></button>
+              </div>
+            </div>
+
+            <nav>
+              <ul class="side-menu">
+                <li><button>Ремонтируемые бренды</button></li>
+                <li><button>Ремонтируемые устройства</button></li>
+                <li><button>Дополнительные услуги</button></li>
+                <li><button>Цены на услуги</button></li>
+                <li><button>Адреса сервисных центров</button></li>
+                <li><button>Специальные цены</button></li>
+                <li><button>Отзывы</button></li>
+              </ul>
+            </nav>
+
+            <div class="group">
+              <div class="description">
+                <div class="description__text">
+                  <p>
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                  </p>
+                  <p>
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                    количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                    очередь, советуют нас родным и близким.
+                  </p>
+                </div>
+                <button class="description__read-all">Читать далее</button>
+              </div>
+              <img class="image" src="./img/main.jpg">
+            </div>
+          </div>
+
+          <h2>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+
+          <div class="swiper-wrapper-container" style="overflow: hidden;">
+            <!-- Разметка для Swiper -->
+            <div class="swiper-container brands-grid-container">
+              <div class="swiper-wrapper brands-grid">
+                <div class="swiper-slide brand Lenovo">
+                  <a href="#" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand Samsung"">
+                  <a href=" #" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand apple">
+                  <a href="#" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand Bosch">
+                  <a href="#" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand hp">
+                  <a href="#" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand acer">
+                  <a href="#" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand viewsonic">
+                  <a href="#" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand sony">
+                  <a href="#" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand Lenovo">
+                  <a href="#" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand Samsung">
+                  <a href="#" class="button-circle"></a>
+                </div>
+                <div class="swiper-slide brand apple">
+                  <a href="#" class="button-circle"></a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <button id="toggleButton">Показать все</button>
+            </div>
+          </div>
+
+
+          <section>
+            <h2>РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+            <div class="swiper-wrapper-container" style="overflow: hidden;">
+              <div class="swiper-container repair-cards-container">
+                <div class="swiper-wrapper repair-cards">
+                  <div class="swiper-slide repair-card">
+                    <p>Ремонт ноутбуков</p>
+                    <button class="arrow-button">></button>
+                  </div>
+
+                  <div class="swiper-slide repair-card">
+                    <p>Ремонт планшетов</p>
+                    <button class="arrow-button">></button>
+                  </div>
+
+                  <div class="swiper-slide repair-card">
+                    <p>Ремонт ПК</p>
+                    <button class="arrow-button">></button>
+                  </div>
+
+                  <div class="swiper-slide repair-card">
+                    <p>Ремонт ПК</p>
+                    <button class="arrow-button">></button>
+                  </div>
+
+                  <div class="swiper-slide repair-card">
+                    <p>Ремонт ПК</p>
+                    <button class="arrow-button">></button>
+                  </div>
+
+                  <div class="swiper-slide repair-card">
+                    <p>Ремонт ПК</p>
+                    <button class="arrow-button">></button>
+                  </div>
+                </div>
+                <!-- Пагинация (точки) -->
+                <div class="swiper-pagination"></div>
+                <button id="toggleButton">Показать все</button>
+
+              </div>
+            </div>
+          </section>
+
+
+          <section>
+            <h2>ЦЕНЫ НА УСЛУГИ</h2>
+            <div class="swiper-wrapper-container" style="overflow: hidden;">
+              <div class="swiper-container">
+                <div class="swiper-wrapper price-table">
+                  <div class="price-row header">
+                    <div class="price-cell">Ремонтные услуги</div>
+                    <div class="price-cell">Цена</div>
+                    <div class="price-cell">Срок</div>
+                    <div class="price-cell"></div>
+                  </div>
+
+                  <div class="swiper-slide price-row">
+                    <h3 class="price-cell svaiper">Ремонтные услуги</h3>
+                    <div class="price-cell">Диагностика</div>
+                    <h3 class="price-cell svaiper">Цена</h3>
+                    <div class="price-cell">Бесплатно</div>
+                    <h3 class="price-cell svaiper">Срок</h3>
+                    <div class="price-cell">30 мин</div>
+                    <div class="price-cell">
+                      <button class="order-button">Заказать<img src="./img/dropdown-white.svg"></button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide price-row">
+                    <h3 class="price-cell svaiper">Ремонтные услуги</h3>
+                    <div class="price-cell">Замена дисплея</div>
+                    <h3 class="price-cell svaiper">Цена</h3>
+                    <div class="price-cell">1000 P</div>
+                    <h3 class="price-cell svaiper">Срок</h3>
+                    <div class="price-cell">30-120 мин</div>
+                    <div class="price-cell">
+                      <button class="order-button">Заказать<img src="./img/dropdown-white.svg"></button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide price-row">
+                    <h3 class="price-cell svaiper">Ремонтные услуги</h3>
+                    <div class="price-cell">Замена полифонического динамика</div>
+                    <h3 class="price-cell svaiper">Цена</h3>
+                    <div class="price-cell">1000 P</div>
+                    <h3 class="price-cell svaiper">Срок</h3>
+                    <div class="price-cell">30-120 мин</div>
+                    <div class="price-cell">
+                      <button class="order-button">Заказать<img src="./img/dropdown-white.svg"></button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide price-row">
+                    <h3 class="price-cell svaiper">Ремонтные услуги</h3>
+                    <div class="price-cell">Тестирование с выдачей технического заключения</div>
+                    <h3 class="price-cell svaiper">Цена</h3>
+                    <div class="price-cell">1000 P</div>
+                    <h3 class="price-cell svaiper">Срок</h3>
+                    <div class="price-cell">30-120 мин</div>
+                    <div class="price-cell">
+                      <button class="order-button">Заказать<img src="./img/dropdown-white.svg"></button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide price-row">
+                    <h3 class="price-cell svaiper">Ремонтные услуги</h3>
+                    <div class="price-cell">Замена программного обеспечения</div>
+                    <h3 class="price-cell svaiper">Цена</h3>
+                    <div class="price-cell">1000 P</div>
+                    <h3 class="price-cell svaiper">Срок</h3>
+                    <div class="price-cell">30-120 мин</div>
+                    <div class="price-cell">
+                      <button class="order-button">Заказать<img src="./img/dropdown-white.svg"></button>
+                    </div>
+                  </div>
+
+
+
+                </div>
+                <!-- Добавляем навигационные кнопки и пагинацию -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <p class="note">
+              Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого
+              предложения на постоянное обслуживание, оставьте заявку.
+            </p>
+            <button class="commercial-offer">Получить коммерческое предложение</button>
+          </section>
+        </div>
+        <!-- Мобильное меню -->
+        <div class="sidebar">
+          <div class="upper-menu-sidebar">
+            <div class="left-side">
+              <div class="circle exit"></div>
+              <img src="./img/Group.svg">
+            </div>
+            <div class="rigth-side">
+              <div class="circle search"></div>
+            </div>
+          </div>
+
+          <nav>
+            <a href="#">Ремонт техники</a>
+            <a href="#">Услуги и сервисы</a>
+            <a href="#">Корпоративным клиентам</a>
+            <a href="#">Продавцам техники</a>
+            <a href="#">Партнерам</a>
+            <a href="#">Производителям</a>
+            <a href="#">Наши сервисные центры</a>
+            <a href="#">Контакты</a>
+          </nav>
+
+          <div class="contact">
+            <div class="left-side">
+              <div class="circle call"></div>
+              <div class="circle chat"></div>
+              <div class="circle profile"></div>
+            </div>
+            <div>mail@cps.com</div>
+            <div class="phone">8 800 890 8900</div>
+          </div>
+
+          <div class="languages">
+            <a href="#">RU</a>
+            <a href="#">EN</a>
+            <a href="#">CH</a>
+          </div>
+        </div>
+
+        <!-- Модальное окно обратной связи -->
+        <div class="modal feedback-modal" id="feedbackModal">
+          <div class="modal-content">
+            <div class="circle exit"></div>
+            <h1>Обратная связь</h1>
+            <form>
+              <input type="text" id="name" name="name" placeholder="Имя">
+
+              <input type="tel" id="phone" name="phone" placeholder="Телефон">
+
+              <input type="email" id="email" name="email" placeholder="Электронная почта">
+
+              <textarea id="message" name="message" placeholder="Сообщение"></textarea>
+
+              <p class="privacy-note">
+                Нажимая "Отправить", вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с
+                нашей <a href="#">политикой конфиденциальности</a>.
+              </p>
+
+              <button type="submit" class="submit-button">ОТПРАВИТЬ<img src="./img/dropdown-white.svg"></button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Модальное окно заказа звонка -->
+        <div class="modal call-modal" id="callModal">
+          <div class="modal-content">
+            <div class="circle exit"></div>
+            <h1>Заказать звонок</h1>
+            <form>
+              <input type="tel" id="phone" name="phone" placeholder="Телефон">
+
+              <p class="privacy-note">
+                Нажимая "Отправить", вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с
+                нашей <a href="#">политикой конфиденциальности</a>.
+              </p>
+
+              <button type="submit" class="submit-button">ОТПРАВИТЬ<img src="./img/dropdown-white.svg"></button>
+            </form>
+          </div>
+        </div>
+
+      </main>
+
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div>© 2019 CPS<br>Разработано командой Apesong</div>
+          <div>Политика конфиденциальности</div>
+          <div>Информация, размещенная на данной странице, не является публичной офертой</div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+  <script>
+    document.querySelector('.burger').addEventListener('click', function () {
+      document.querySelector('.sidebar').classList.add('active');
+    });
+
+    document.querySelector('.exit').addEventListener('click', function () {
+      document.querySelector('.sidebar').classList.remove('active');
+    });
+
+    // Находим все элементы с классом .circle .call
+    const circlescall = document.querySelectorAll('.circle.call');
+
+    // Пробегаемся по каждому элементу и добавляем обработчик событий
+    circlescall.forEach(function (circle) {
+      circle.addEventListener('click', function () {
+        document.getElementById('feedbackModal').style.display = 'block';
+        document.querySelector('.main__content').style.opacity = 0.2;
+        document.querySelector('header').style.opacity = 0.2;
+        document.querySelector('footer').style.opacity = 0.2;
+      });
+    });
+
+    const circlechat = document.querySelectorAll('.circle.chat');
+
+    // Пробегаемся по каждому элементу и добавляем обработчик событий
+    circlechat.forEach(function (circle) {
+      circle.addEventListener('click', function () {
+        document.getElementById('callModal').style.display = 'block';
+        document.querySelector('.main__content').style.opacity = 0.2;
+        document.querySelector('header').style.opacity = 0.2;
+        document.querySelector('footer').style.opacity = 0.2;
+      });
+    });
+
+    const exit = document.querySelectorAll('.circle.exit');
+
+    exit.forEach(function (circle) {
+      circle.addEventListener('click', function () {
+        document.getElementById('feedbackModal').style.display = 'none';
+        document.getElementById('callModal').style.display = 'none';
+        document.querySelector('.main__content').style.opacity = 1;
+        document.querySelector('header').style.opacity = 1;
+        document.querySelector('footer').style.opacity = 1;
+      });
+    });
+
+
+    let swiper = null;
+
+    function enableSwiper() {
+      if (!swiper) {
+        swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          on: {
+            slideChange: function () {
+              applyShadowToSecondSlide();
+            }
+          }
+        });
+        applyShadowToSecondSlide();
+      }
+    }
+
+    function disableSwiper() {
+      if (swiper) {
+        removeShadowFromAllSlides();
+        swiper.destroy(true, true);
+        swiper = null;
+      }
+    }
+
+    function removeShadowFromAllSlides() {
+      var slides = document.querySelectorAll('.swiper-slide');
+      slides.forEach(function (slide) {
+        slide.classList.remove('active-shadow');
+      });
+    }
+
+    function applyShadowToSecondSlide() {
+      var slides = document.querySelectorAll('.swiper-slide');
+
+      slides.forEach(function (slide) {
+        slide.classList.remove('active-shadow');
+      });
+
+      var secondVisibleSlide = slides[swiper.activeIndex + 1];
+      if (secondVisibleSlide) {
+        secondVisibleSlide.classList.add('active-shadow');
+        console.log('Shadow added to second visible slide');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const screenWidth = window.innerWidth;
+      console.log('Initial screen width:', screenWidth);
+
+      // Инициализировать свайпер только при загрузке страницы
+      if (screenWidth <= 768) {
+        enableSwiper();
+      } else {
+        disableSwiper();
+      }
+    });
+
+
+
+    document.querySelector(".swiper-container.brands-grid-container #toggleButton").addEventListener("click", function () {
+      var brandsGrid = document.querySelector(".brands-grid");
+
+      if (brandsGrid.style.overflow === "hidden" || brandsGrid.style.overflow === "") {
+        brandsGrid.style.overflow = "visible";
+        brandsGrid.style.maxHeight = "700px";
+        this.textContent = "Скрыть";
+        this.style.backgroundImage = "url('./img/expand2.svg')";
+      } else {
+        brandsGrid.style.overflow = "hidden";
+        brandsGrid.style.maxHeight = "170px";
+        this.textContent = "Показать все";
+        this.style.backgroundImage = "url('./img/expand.svg')";
+      }
+    });
+
+
+    document.querySelector(".description__read-all").addEventListener("click", function () {
+      var description__text = document.querySelector(".description__text");
+      var currentMaxHeight = window.getComputedStyle(description__text).maxHeight;
+
+
+      if (currentMaxHeight === "90px") {
+        description__text.style.maxHeight = "700px";
+        this.textContent = "Скрыть";
+        this.style.backgroundImage = "url('./img/expand2.svg')";
+      } else {
+        description__text.style.maxHeight = "90px";
+        this.textContent = "Показать все";
+        this.style.backgroundImage = "url('./img/expand.svg')";
+      }
+    });
+
+    document.querySelector(".swiper-container.repair-cards-container #toggleButton").addEventListener("click", function () {
+      var brandsGrid = document.querySelector(".repair-cards");
+
+      if (brandsGrid.style.overflow === "hidden" || brandsGrid.style.overflow === "") {
+        brandsGrid.style.overflow = "visible";
+        brandsGrid.style.maxHeight = "700px";
+        this.textContent = "Скрыть";
+        this.style.backgroundImage = "url('./img/expand2.svg')";
+      } else {
+        brandsGrid.style.overflow = "hidden";
+        brandsGrid.style.maxHeight = "170px";
+        this.textContent = "Показать все";
+        this.style.backgroundImage = "url('./img/expand.svg')";
+      }
+    });
+
+  </script>
+
+</body>
+
 </html>

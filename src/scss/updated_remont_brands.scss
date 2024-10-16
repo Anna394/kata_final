@@ -1,0 +1,94 @@
+@import 'variables';
+
+
+h2 {
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+    background: linear-gradient(270deg, $off-white 0%, $white 98.61%);
+    line-height: 24px;
+    padding: 20px 30px 20px 30px;
+    font-family: "TT Lakes Regular";
+    font-weight: normal;
+    color: $light-gray;
+}  
+
+.brand {
+    display: flex;
+    max-width: 240px;
+    height: 72px; 
+    background-color: $pure-white;
+    padding: 20px;
+    border: 1px solid $background-gray;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+}
+
+.Lenovo{
+    background-image: url(../img/Lenovo.svg);
+}
+
+.Samsung{
+    background-image: url(../img/Samsung.svg);
+}
+
+.apple{
+    background-image: url(../img/apple.svg);
+}
+
+.Bosch{
+    background-image: url(../img/Bosch.svg);
+}
+
+.hp{
+    background-image: url(../img/hp.svg);
+}
+
+.acer{
+    background-image: url(../img/acer.svg);
+}
+
+.viewsonic{
+    background-image: url(../img/viewsonic.svg);
+}
+.sony{
+    background-image: url(../img/sony.svg);
+}
+
+.button-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $pure-white;
+    border: 2px solid $hot-pink-button; 
+    color: $hot-pink-button; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    background-image: url(../img/dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}  
+
+#toggleButton {
+    margin-left: 30px;
+    background-image: url('../img/expand.svg');
+    background-repeat: no-repeat; 
+    background-position: left center; 
+    padding: 10px 20px 10px 30px;
+}
+
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background:$border-gray;
+}
+.swiper-pagination-bullet-active{
+    background: $gray-border;
+}
